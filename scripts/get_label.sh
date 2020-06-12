@@ -1,0 +1,14 @@
+python get_label.py \
+    --depth=12 \
+    --data_dir=/home/dlf/pyprojects/BertDistillNLI/dataset/mnli \
+    --dataset="mnli" \
+    --dev_name=dev_matched \
+    --test_name=test_matched \
+    --train_batch_size=32 \
+    --eval_batch_size=32 \
+    --max_seq_length=128 \
+    --learning_rate=2e-5 \
+    --bert_config_file=/home/dlf/pyprojects/pretrain_models/bert-base-uncased/bert_config.json \
+    --load_model=/home/dlf/pyprojects/BertDistillNLI/saved_models/mnli/L-12_S-20/best_model.pt \
+    --vocab_file=/home/dlf/pyprojects/pretrain_models/bert-base-uncased/vocab.txt \
+    --output_dir=/home/dlf/pyprojects/BertDistillNLI/resmnli/S-20
